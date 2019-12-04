@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="right" android:id="@+id/lr_cancel" android:background="@drawable/selctor_oncilck_left" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/lr_left_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp25" android:src="@mipmap/ic_clear_white_48dp"/>
+        <TextView android:textSize="@dimen/sp28" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/lr_left_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp25"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/lr_confrim" android:background="@drawable/selctor_oncilck_right" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/lr_right_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp25" android:src="@mipmap/ic_check_white_48dp"/>
+        <TextView android:textSize="@dimen/sp28" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/lr_right_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp25"/>
+    </LinearLayout>
+</LinearLayout>
