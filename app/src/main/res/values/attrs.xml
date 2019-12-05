@@ -1,9 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="LeftRightView">
+    	<attr name="leftBackground" format="reference"></attr>
+        <attr name="leftImgSrc" format="reference"></attr>
+        <attr name="leftRightType">
+            <enum name="img" value="1" />
+            <enum name="text" value="0" />
+        </attr>
+        <attr name="leftText" format="string"></attr>
+        <attr name="rightBackground" format="reference">
+        </attr>
+        <attr name="rightImgSrc" format="reference">
+        </attr>
+        <attr name="rightText" format="string">
+        </attr>
 
     </declare-styleable>
-     <attr name="actionBarDivider" format="reference">
+    <attr name="border_color" format="color">
+    </attr>
+    <attr name="border_width" format="dimension">
+    </attr>
+    <attr name="borderlessButtonStyle" format="reference">
+    </attr>
+    <attr name="fineness">
+        <enum name="one" value="1" />
+        <enum name="three" value="3" />
+        <enum name="two" value="2" />
+    </attr>
+    <attr name="lineSpeed" format="integer">
+    </attr>
+    <attr name="listChoiceBackgroundIndicator" format="reference">
+    </attr>
+    <attr name="listDividerAlertDialog" format="reference">
+    </attr>
+    <attr name="listItemLayout" format="reference">
+    </attr>
+    <attr name="listLayout" format="reference">
+    </attr>
+    <attr name="listMenuViewStyle" format="reference">
+    </attr>
+    <attr name="listPopupWindowStyle" format="reference">
+    </attr>
+    <attr name="listPreferredItemHeight" format="dimension">
+    </attr>
+    <attr name="listPreferredItemHeightLarge" format="dimension">
+    </attr>
+    <attr name="listPreferredItemHeightSmall" format="dimension">
+    </attr>
+    <attr name="listPreferredItemPaddingLeft" format="dimension">
+    </attr>
+    <attr name="listPreferredItemPaddingRight" format="dimension">
+    </attr>
+    <attr name="loadingText" format="string">
+    </attr>
+    <attr name="loadingTextAppearance" format="reference">
+    </attr>
+    <attr name="logo" format="reference">
+    </attr>
+    <attr name="logoDescription" format="string">
+    </attr>
+    <attr name="maxActionInlineWidth" format="dimension">
+    </attr>
+    <attr name="maxButtonHeight" format="dimension">
+    </attr>
+    <attr name="maxVolume" format="float">
+    </attr>
+    <attr name="measureWithLargestChild" format="boolean">
+    </attr>
+    <attr name="menu" format="reference">
+    </attr>
+    <attr name="middleLine" format="color">
+    </attr>
+    <attr name="middleLineHeight" format="dimension">
+    </attr>
+    <attr name="multiChoiceItemLayout" format="reference">
+    </attr>
+    <attr name="queryBackground" format="reference">
+    </attr>
+    <attr name="queryHint" format="string">
+    </attr>
+    <attr name="radioButtonStyle" format="reference">
+    </attr>
+    <attr name="ratingBarStyle" format="reference">
+    </attr>
+    <attr name="ratingBarStyleIndicator" format="reference">
+    </attr>
+    <attr name="ratingBarStyleSmall" format="reference">
+    </attr>
+    <attr name="rectInitHeight" format="dimension">
+    </attr>
+    <attr name="rectSpace" format="dimension">
+    </attr>
+    <attr name="rectWidth" format="dimension">
+    </attr>
+    <attr name="reverseLayout" format="boolean">
+    </attr>
+
+    <attr name="rippleColor" format="color">
+    </attr>
+    <!-- <attr name="actionBarDivider" format="reference">
      </attr>
      <attr name="actionBarItemBackground" format="reference">
      </attr>
@@ -434,64 +529,8 @@
      </attr>
      <attr name="layout_scrollInterpolator" format="reference">
      </attr>
-     <attr name="leftBackground" format="reference">
-     </attr>
-     <attr name="leftImgSrc" format="reference">
-     </attr>
-     <attr name="leftRightType">
-         <enum name="img" value="1" />
-         <enum name="text" value="0" />
-     </attr>
-     <attr name="leftText" format="string">
-     </attr>
-     <attr name="lineSpeed" format="integer">
-     </attr>
-     <attr name="listChoiceBackgroundIndicator" format="reference">
-     </attr>
-     <attr name="listDividerAlertDialog" format="reference">
-     </attr>
-     <attr name="listItemLayout" format="reference">
-     </attr>
-     <attr name="listLayout" format="reference">
-     </attr>
-     <attr name="listMenuViewStyle" format="reference">
-     </attr>
-     <attr name="listPopupWindowStyle" format="reference">
-     </attr>
-     <attr name="listPreferredItemHeight" format="dimension">
-     </attr>
-     <attr name="listPreferredItemHeightLarge" format="dimension">
-     </attr>
-     <attr name="listPreferredItemHeightSmall" format="dimension">
-     </attr>
-     <attr name="listPreferredItemPaddingLeft" format="dimension">
-     </attr>
-     <attr name="listPreferredItemPaddingRight" format="dimension">
-     </attr>
-     <attr name="loadingText" format="string">
-     </attr>
-     <attr name="loadingTextAppearance" format="reference">
-     </attr>
-     <attr name="logo" format="reference">
-     </attr>
-     <attr name="logoDescription" format="string">
-     </attr>
-     <attr name="maxActionInlineWidth" format="dimension">
-     </attr>
-     <attr name="maxButtonHeight" format="dimension">
-     </attr>
-     <attr name="maxVolume" format="float">
-     </attr>
-     <attr name="measureWithLargestChild" format="boolean">
-     </attr>
-     <attr name="menu" format="reference">
-     </attr>
-     <attr name="middleLine" format="color">
-     </attr>
-     <attr name="middleLineHeight" format="dimension">
-     </attr>
-     <attr name="multiChoiceItemLayout" format="reference">
-     </attr>
+
+
      <attr name="navigationContentDescription" format="string">
      </attr>
      <attr name="navigationIcon" format="reference">
@@ -531,34 +570,7 @@
     </attr>
     <attr name="progressBarStyle" format="reference">
     </attr>
-    <attr name="queryBackground" format="reference">
-    </attr>
-    <attr name="queryHint" format="string">
-    </attr>
-    <attr name="radioButtonStyle" format="reference">
-    </attr>
-    <attr name="ratingBarStyle" format="reference">
-    </attr>
-    <attr name="ratingBarStyleIndicator" format="reference">
-    </attr>
-    <attr name="ratingBarStyleSmall" format="reference">
-    </attr>
-    <attr name="rectInitHeight" format="dimension">
-    </attr>
-    <attr name="rectSpace" format="dimension">
-    </attr>
-    <attr name="rectWidth" format="dimension">
-    </attr>
-    <attr name="reverseLayout" format="boolean">
-    </attr>
-    <attr name="rightBackground" format="reference">
-    </attr>
-    <attr name="rightImgSrc" format="reference">
-    </attr>
-    <attr name="rightText" format="string">
-    </attr>
-    <attr name="rippleColor" format="color">
-    </attr>
+
     <attr name="searchHintIcon" format="reference">
     </attr>
     <attr name="searchIcon" format="reference">
@@ -571,13 +583,7 @@
     </attr>
     <attr name="selectableItemBackgroundBorderless" format="reference">
     </attr>
-    <attr name="sensibility">
-        <enum name="five" value="5" />
-        <enum name="four" value="4" />
-        <enum name="one" value="1" />
-        <enum name="three" value="3" />
-        <enum name="two" value="2" />
-    </attr>
+
     <attr name="showAsAction">
         <flag name="always" value="2" />
         <flag name="collapseActionView" value="8" />
@@ -767,14 +773,7 @@
     </attr>
     <attr name="useCompatPadding" format="boolean">
     </attr>
-    <attr name="viewMode">
-        <enum name="line" value="0" />
-        <enum name="rect" value="1" />
-    </attr>
-    <attr name="voiceIcon" format="reference">
-    </attr>
-    <attr name="voiceLine" format="color">
-    </attr>
+
     <attr name="windowActionBar" format="boolean">
     </attr>
     <attr name="windowActionBarOverlay" format="boolean">
@@ -794,5 +793,20 @@
     <attr name="windowMinWidthMinor" format="dimension|fraction">
     </attr>
     <attr name="windowNoTitle" format="boolean">
+    </attr>-->
+    <attr name="viewMode">
+        <enum name="line" value="0" />
+        <enum name="rect" value="1" />
+    </attr>
+    <attr name="voiceIcon" format="reference">
+    </attr>
+    <attr name="voiceLine" format="color">
+    </attr>
+    <attr name="sensibility">
+        <enum name="five" value="5" />
+        <enum name="four" value="4" />
+        <enum name="one" value="1" />
+        <enum name="three" value="3" />
+        <enum name="two" value="2" />
     </attr>
 </resources>

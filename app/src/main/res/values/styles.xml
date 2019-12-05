@@ -1153,9 +1153,7 @@
     </style>
     <style name="TextAppearance.AppCompat.Notification.Title">
     </style>
-    <style name="TextAppearance.AppCompat.Notification.Title.Media">
-        <item name="android:textColor">@color/primary_text_default_material_dark</item>
-    </style>
+
     <style name="TextAppearance.AppCompat.SearchResult.Subtitle">
     </style>
     <style name="TextAppearance.AppCompat.SearchResult.Title">
@@ -1545,5 +1543,8 @@
     <style name="text_wrap">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Notification">
+        <item name="android:textColor">@color/primary_text_default_material_dark</item>
     </style>
 </resources>

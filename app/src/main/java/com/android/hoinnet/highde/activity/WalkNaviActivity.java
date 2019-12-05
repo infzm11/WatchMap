@@ -105,7 +105,7 @@ public class WalkNaviActivity extends BasicNaviActivity implements View.OnClickL
         int i;
         super.onInitNaviSuccess();
         if (this.mLatLngStart == null || this.mLatLngEnd == null) {
-            Toast.makeText(this, getString(R.string.location_fail), 0).show();
+            Toast.makeText(this, getString(R.string.location_fail), Toast.LENGTH_SHORT).show();
             finish();
         } else if (2 == this.mNaviMode) {
             try {
@@ -130,9 +130,9 @@ public class WalkNaviActivity extends BasicNaviActivity implements View.OnClickL
     public void onLockMap(boolean z) {
         super.onLockMap(z);
         if (!z) {
-            this.mLinearLayout.setVisibility(0);
+            this.mLinearLayout.setVisibility(View.VISIBLE);
         } else {
-            this.mLinearLayout.setVisibility(8);
+            this.mLinearLayout.setVisibility(View.GONE);
         }
     }
 

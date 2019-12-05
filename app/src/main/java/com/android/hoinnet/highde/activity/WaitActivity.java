@@ -4,8 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.Nullable;
-import androidx.annotation.*;
+import androidx.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
@@ -90,7 +89,7 @@ public class WaitActivity extends BaseActivity {
             Intent intent = new Intent();
             intent.setClass(this, TipActivity.class);
             startActivityForResult(intent, 13);
-        } else if (this.mLinearLayout == null || this.mLinearLayout.getVisibility() != 0) {
+        } else if (this.mLinearLayout == null || this.mLinearLayout.getVisibility() != View.VISIBLE) {
             loadAnimation();
         } else {
             Log.d(this.TAG, "onStart: is Net Error");
@@ -108,8 +107,8 @@ public class WaitActivity extends BaseActivity {
             return;
         }
         this.mImageView.clearAnimation();
-        this.mImageView.setVisibility(8);
-        this.mLinearLayout.setVisibility(0);
+        this.mImageView.setVisibility(View.GONE);
+        this.mLinearLayout.setVisibility(View.VISIBLE);
     }
 
     /* access modifiers changed from: protected */

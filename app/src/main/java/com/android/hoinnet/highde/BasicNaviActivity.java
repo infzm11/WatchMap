@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Toast;
 import com.amap.api.navi.AMapNavi;
 import com.amap.api.navi.AMapNaviListener;
@@ -188,7 +188,7 @@ public class BasicNaviActivity extends AppCompatActivity implements AMapNaviList
     }
 
     public void onCalculateRouteFailure(int i) {
-        Toast.makeText(this, getString(R.string.route_failed), 0).show();
+        Toast.makeText(this, getString(R.string.route_failed), Toast.LENGTH_SHORT).show();
         Logger.d("路线计算失败：错误码=" + i + "\n错误码详细链接见：http://lbs.amap.com/api/android-navi-sdk/guide/tools/errorcode/");
     }
 

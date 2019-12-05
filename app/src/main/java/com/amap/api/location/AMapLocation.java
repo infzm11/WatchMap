@@ -14,7 +14,7 @@ import org.json.JSONObject;
 
 public class AMapLocation extends Location implements Parcelable, Cloneable {
     public static final Parcelable.Creator<AMapLocation> CREATOR = new Parcelable.Creator<AMapLocation>() {
-        public final /* synthetic */ Object createFromParcel(Parcel parcel) {
+        public final /* synthetic */ AMapLocation createFromParcel(Parcel parcel) {
             AMapLocation aMapLocation = new AMapLocation((Location) Location.CREATOR.createFromParcel(parcel));
             String unused = aMapLocation.h = parcel.readString();
             String unused2 = aMapLocation.i = parcel.readString();
@@ -49,7 +49,7 @@ public class AMapLocation extends Location implements Parcelable, Cloneable {
             return aMapLocation;
         }
 
-        public final /* bridge */ /* synthetic */ Object[] newArray(int i) {
+        public final /* bridge */ /* synthetic */ AMapLocation[] newArray(int i) {
             return new AMapLocation[i];
         }
     };

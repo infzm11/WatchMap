@@ -58,9 +58,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        app:leftRightType="?attr/leftRightType"
         app:leftBackground="@drawable/selctor_oncilck_left"
         app:leftImgSrc="@mipmap/ic_message_voice"
-        app:leftRightType="1"
         app:rightBackground="@drawable/selctor_oncilck_right"
         app:rightImgSrc="@mipmap/ic_message_keyboard" />
 </RelativeLayout>
